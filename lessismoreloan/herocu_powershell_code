@@ -1,0 +1,72 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\linea> cd dashloan
+PS C:\Users\linea\dashloan> git init
+Reinitialized existing Git repository in C:/Users/linea/dashloan/.git/
+PS C:\Users\linea\dashloan> heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/2f4b5c14-5b7a-479f-b8ec-a85ad6895f8e
+Logging in... done
+Logged in as lineality@gmail.com
+PS C:\Users\linea\dashloan> heroku git:remote -a lessismoreloan                                                         set git remote heroku to https://git.heroku.com/lessismoreloan.git
+PS C:\Users\linea\dashloan> git add .                                                                                   PS C:\Users\linea\dashloan> git commit -am "make it better"
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'linea@LAPTOP-PRPK6HTN.(none)')
+PS C:\Users\linea\dashloan> git commit -am "make it better"
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'linea@LAPTOP-PRPK6HTN.(none)')
+PS C:\Users\linea\dashloan> git config --global user.email "lineality@gmail.com"                                        PS C:\Users\linea\dashloan> git config --global user.name "Geoffrey Gordon Ashbrook"                                    PS C:\Users\linea\dashloan> git commit -am "make it better"                                                             On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\linea\dashloan> git push heroku master                                                                      Enumerating objects: 198, done.
+Counting objects: 100% (198/198), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (76/76), done.
+Writing objects: 100% (198/198), 68.73 KiB | 8.59 MiB/s, done.
+Total 198 (delta 116), reused 198 (delta 116)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Deleting 1 files matching .slugignore patterns.
+remote: -----> Python app detected
+remote:  !     No 'Pipfile.lock' found! We recommend you commit this into your repository.
+remote: -----> Installing python-3.6.9
+remote: -----> Installing pip
+remote: -----> Installing dependencies with Pipenv 2018.5.18…
+remote:        Installing dependencies from Pipfile…
+remote: -----> Installing SQLite3
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 108.4M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://lessismoreloan.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/lessismoreloan.git
+ * [new branch]      master -> master
+PS C:\Users\linea\dashloan>
